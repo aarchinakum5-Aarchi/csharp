@@ -1,33 +1,35 @@
-﻿using System;
+﻿
+            using System;
 
-class Rectangle
-{
-    private double length;
-    private double width;
+
+namespace rectangle
+    {
+        internal class rectangle
+        {
+            int l, w, area;
+            public rectangle()
+            {
+                l = 10;
+                w = 20;
+
+            }
+            public rectangle(int l1, int w1)
+            {
+                l = l1;
+                w = w1;
+            }
+            public void calculate()
+            {
+                area = l * w;
+
+            }
+            public void display()
+            {
+                Console.WriteLine("area  =  " + area);
+            }
+        }
+    }
+
 
     
-    public Rectangle()
-    {
-        length = 0;
-        width = 0;
-    }
 
-    public Rectangle(double l, double w)
-    {
-        length = l;
-        width = w;
-    }
-
-    
-    public double GetArea()
-    {
-        return length * width;
-    }
-
-    public void Display()
-    {
-        Console.WriteLine("Length: " + length);
-        Console.WriteLine("Width: " + width);
-        Console.WriteLine("Area: " + GetArea());
-    }
-}
