@@ -1,35 +1,21 @@
-﻿
-            using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-
-namespace rectangle
+namespace unit4_prog21
+{
+    internal class Program
     {
-        internal class rectangle
+        static void Main(string[] args)
         {
-            int l, w, area;
-            public rectangle()
-            {
-                l = 10;
-                w = 20;
+            car c1 = new car();
+            c1.get_data();
+            c1.get_car();
+            c1.show_vehicle();
+            c1.show_car();
 
-            }
-            public rectangle(int l1, int w1)
-            {
-                l = l1;
-                w = w1;
-            }
-            public void calculate()
-            {
-                area = l * w;
-
-            }
-            public void display()
-            {
-                Console.WriteLine("area  =  " + area);
-            }
         }
     }
-
-
-    
-
+}
